@@ -1,0 +1,28 @@
+name: test-exporter
+metrics:
+  - name: metrics_00
+    description: test metrics 00
+    labels:
+      - a
+      - b
+    type: gauge
+  - name: metrics_01
+    description: test metrics 01
+    labels:
+      - c
+      - d
+      - e
+    type: gauge
+  - name: metrics_02
+    description: test metrics 02
+    labels:
+      - f
+      - g
+    type: counter
+    instant: false
+  - name: metrics_03
+    description: test metrics 03
+    labels:
+      - f
+      - g
+    type: counter

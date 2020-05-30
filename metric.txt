@@ -1,0 +1,11 @@
+class Metric:
+    def __init__(self, system, component, metric_name, unit, labels, value):
+        self.system = system
+        self.component = component
+        self.metric_name = metric_name
+        self.labels = labels
+        self.unit = unit
+        self.value = value
+
+    def __str__(self):
+        return f"{self.system}_{self.component}_{self.metric_name}_{self.unit}{{{','.join(self.labels)}}} {self.value}"
