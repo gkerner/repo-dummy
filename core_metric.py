@@ -1,8 +1,4 @@
-# -*- coding: utf-8 -*-
-import os
-import time
-
-import yaml
+##
 from prometheus_client import Gauge, Counter
 from prometheus_client.core import CollectorRegistry
 
